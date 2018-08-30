@@ -1,7 +1,7 @@
-import React, { Component } from 'React';
+import React, { Component } from 'react';
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 // import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
 import Home from "./Home.js";
 
 class App extends Component {
