@@ -1,13 +1,18 @@
 .title-page-container {
-    // background-image:url('../images/laputa.jpg');
+    padding: 0px;
+    margin: 0px;
+    background-image:url('../images/grassland.jpg');
     height: 100vh; 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    background: #007Cdc;
-    background: linear-gradient(top, #007Cdc 0%, #003a68 100%);
+    font-family: 'Montserrat', sans-serif;
+    // background: #4CB5F5; // #007Cdc
+    // background: #063852;
+    // background: #2D4262;
+    // background: linear-gradient(top, #007Cdc 0%, #003a68 100%);
 
     justify-content: center;
     align-items: center;
@@ -18,28 +23,70 @@
     // -o-background-size: cover;
     // background-size: cover;
     
-    // .color-overlay {
-    //     padding: 0px;
-    //     margin: 0px;
-    //     height: 100vh; 
-    //     background: black;
-    //     opacity: .6;
-    // }
-
-    .contact-container {
+    .color-overlay {
+        padding: 0rem;
+        margin: 0rem;
+        height: 100%; 
+        width: 100%;
+        position: absolute;
+        box-sizing: border-box;
+        
+        background: #2D4262;
+        opacity: .6;
+        // background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+            
+        
+        
+    }
+    .introduction {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-    }
+        align-items: center;
+        z-index: 1;
 
-    h1 {
-        padding: 0px;
-        margin: 0px; 
-        color: white;
-    }
+        h1 {
+            padding: 0rem;
+            margin: 0rem; 
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+        }
 
+        .job {
+            font-size: 0.75rem;
+            color: #ffe479;
+            margin: 1rem 0rem 0rem 0rem;
+        }
 
-    p {
-        color: white;
+        .line-break {
+            width: 6rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .contact-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0rem;
+            margin: 0rem;
+
+            .contact-item {
+                margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+                font-size: 1rem;
+                color: rgb(215, 216, 210);
+
+                .fas, .fab {
+                    margin: 0rem 0.5rem 0rem 0.5rem;
+                }
+            }
+        }
+
     }
 }
